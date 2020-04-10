@@ -1,0 +1,43 @@
+.pjc-slideshow-container{
+	width:100%;
+	margin-bottom:30px;
+	
+}
+
+.pjc-slideshow-container h4{
+    font-weight:bold;
+}
+
+.pjc-slideshow-container h4,
+.pjc-slideshow-container p
+{
+  color:white;
+}
+
+
+
+.orbit img {
+  /* Responsive images (ensure images don't scale beyond their parents) */
+
+  max-width: 100%;
+  /* Part 1: Set a maxium relative to the parent */
+
+  width: auto\9;
+  /* IE7-8 need help adjusting responsive images */
+
+  height: auto;
+  /* Part 2: Scale the height according to the width, otherwise you get stretching */
+
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+
+  margin: 0px !important;
+  padding: 0px !important;
+  
+  
+}
+
+.pjc-preload{
+    display:none;
+}

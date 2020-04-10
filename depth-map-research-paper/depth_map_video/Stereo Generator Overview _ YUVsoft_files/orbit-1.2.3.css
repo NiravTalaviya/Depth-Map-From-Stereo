@@ -1,0 +1,156 @@
+/* CSS for jQuery Orbit Plugin 1.2.3
+ * www.ZURB.com/playground
+ * Copyright 2010, ZURB
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+
+ /* PUT IN YOUR SLIDER ID AND SIZE TO MAKE LOAD BEAUTIFULLY
+ ================================================== */
+
+.featured { 
+    min-height:150px;
+	/*background: #000 url('orbit/loading.gif') no-repeat center center;*/
+	overflow: hidden; 
+}
+
+
+.orbit {
+
+	/*background: #000 url('orbit/loading.gif') no-repeat center center;*/
+	overflow: hidden;
+}
+.orbit > img, .orbit > div, .orbit> a {
+	display: none;
+}
+
+
+
+/* CONTAINER
+ ================================================== */
+
+div.orbit-wrapper {
+	position: relative;
+	 margin-bottom:25px;
+	 margin-top:10px;
+}
+
+div.orbit {
+	position: relative;
+	overflow: hidden
+}
+
+div.orbit > img,div.orbit > a  {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	width:100%;
+	height:100%;
+}
+
+
+
+.orbit > div {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Note: If your slider only uses content or anchors, you're going to want to put the width and height declarations on the ".orbit>div" and "div.orbit>a" tags in addition to just the .orbit-wrapper */
+
+/* TIMER
+ ================================================== */
+
+
+div.timer {
+
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 10px;
+	right: 10px;
+	opacity: 0.6;
+	cursor: pointer;
+	z-index: 9999999999;
+
+}
+
+span.rotator {
+
+	position: absolute;
+	top: 0px;
+	left: -20px;
+	width: 40px;
+	height: 40px;
+	/*background-image: url('orbit/rotator-left.png');*/
+	z-index: 9999999999;
+	
+}
+
+span.mask {
+
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 20px;
+	height: 40px;
+	z-index: 99999999999;
+	overflow: hidden;
+}
+
+span.move {
+	top:0px;
+	position:absolute;
+	left: 0px;
+	
+}
+
+
+
+span.mask-turn {
+
+	display: none;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 40px;
+	height: 40px;
+	/*background-image: url('orbit/rotator-right.png');*/
+	z-index: 99999999999;
+}
+
+
+
+
+span.pause {
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*background: url(orbit/pause-black.png) no-repeat;*/
+	z-index: 4;
+	opacity: 1;
+	
+}
+
+span.pause.active {
+	background: url(orbit/pause-black.png) no-repeat 0 -40px
+}
+
+div.timer:hover span.pause, span.pause.active {
+	opacity: 1
+}
+
+/* CAPTIONS
+ ================================================== */
+ 
+ span.orbit-caption p,span.orbit-caption h4{
+     display:none;
+     height:0px;
+ }
+ 
+
